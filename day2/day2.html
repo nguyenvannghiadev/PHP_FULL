@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo CSS</title>
+    <style type="text/css">
+        a {
+            color: red;
+        }
+        /* SELECTOR trong css */
+        /* 1 - SELECTOR trong the HTML */
+        
+        p {
+            color: blue;
+        }
+        /* 2- SELECTOR theo thuoc tinh id hoac class */
+        /* css cho id voi ky tu # o dau */
+        
+        #p-id {
+            background-color: brown;
+        }
+        /* css cho class voi ky tu . o dau */
+        
+        .p-class {
+            background-color: cyan;
+        }
+        
+        .class2 {
+            color: pink;
+        }
+        /* 3 selector theo cap */
+        /* #div-id a {
+            font-size: 30px;
+        } */
+        
+        #div-id>a {
+            font-size: 30px;
+        }
+        
+        #div-id .div-class>a {
+            font-size: 20px;
+        }
+        /* 4 - Selector theo thuoc tinh cua the HTML */
+        
+        input[type='password'] {
+            background-color: red;
+        }
+        
+        a[href="abc.com"] {
+            color: blue;
+        }
+        /* 5 -SELECTOR theo trang thai phan tu HTML */
+        
+        #p-hover:hover {
+            color: red;
+        }
+        
+        #div-child p:first-child {
+            color: red;
+        }
+        
+        #div-child p:last-child {
+            color: aqua;
+        }
+        
+        #div-child p:nth-child(3) {
+            color: blueviolet;
+        }
+        
+        #a-before-after:before {
+            content: 'Noi dung chen truoc the a/';
+            /*display: block;*/
+        }
+        
+        #a-before-after:after {
+            content: '/Noi dung chen sau the a';
+        }
+    </style>
+    <!--  Cach nhung Css-->
+    <!--    1 - Nhung truc tiep trong the HTML su dung thuoc tinh style-->
+    <!--    2 Nhung qua cap the style-->
+    <!--    3- Nhung thong qua 1 file co duoi la .css-->
+    <link rel="stylesheet" href="css/day2.css">
+    <!--    Cac thuoc tinh CSS can ban-->
+    <style type="text/css">
+        /*1- CSS mau nen - Background*/
+        
+        #p-background {
+            /*height: 200px;*/
+            /*background-color: #FFEB3B;*/
+            /*background-image: url(images/icon.png);*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center;*/
+            background: #FFEB3B url("images/icon.png") no-repeat center;
+        }
+        /*    2 -CSS font chu*/
+        
+        #a-font {
+            color: red;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        /*3 -Text*/
+        
+        #span-text {
+            color: #2196F3;
+            display: block;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-shadow: 3px 4px 8px red;
+            line-height: 30px;
+        }
+        /*    4- CSS Border*/
+        
+        #h-boder {
+            /*border-color: red;*/
+            /*border-style: solid;*/
+            /*border-width: 2px;*/
+            border-radius: 4px;
+            /*Viet gop*/
+            border: 2px solid red;
+        }
+        /*    5- CSS Margin*/
+        
+        #p-margin-1 {
+            background: red;
+        }
+        
+        #p-margin-2 {
+            background: violet;
+            /*margin-top: 40px;*/
+            /*margin-bottom: 20px;*/
+            /*margin-left: 10px;*/
+            /*margin-right: 30px;*/
+            /*    viet gop*/
+            /* tren - phai -duoi - trai theo chieu kim dong ho*/
+            /*margin: 40px 30px 20px 10px;*/
+            /* tren -duoi va trai -phai*/
+            /*margin: 30px 50px;*/
+            margin: 10px auto;
+        }
+        /*    6- Css padding*/
+        
+        #h1-padding {
+            background: yellow;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 400px;
+        }
+        /*    7- With - Height*/
+        
+        #div-width-height {
+            background: red;
+            color: #fff;
+        }
+        /*    8- Possition*/
+        
+        #div-position {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            position: relative;
+            top: 20px;
+            left: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div-position">
+        <p>The p ben trong div position</p>
+        <div id="div-child1"> The div con</div>
+    </div>
+    <div id="div-width-height">
+        Div css with height
+    </div>
+    <h1 id="h1-padding"> The h1 voi css padding</h1>
+    <p id="p-margin-1"> The p margin 1</p>
+    <p id="p-margin-2"> The p margin 2</p>
+    <h5 id="h-boder"> The h5 su dung css boder</h5>
+    <span id="span-text">The span voi css text</span>
+    <br>
+    <a href="" id="a-font"> The a voi css font</a>
+    <p id="p-background">
+        The p voi css background
+    </p>
+    <h1>
+        The h1 su dung css tu file day2.css
+    </h1>
+    <p style="color: red"> The p su dung inline css</p>
+    <a id="a-before-after">
+    The a su dung css lien quan den before after
+</a>
+    <div id="div-child">
+        <p>
+            The p thu nhat
+        </p>
+
+        <p>
+            The p thu 2
+        </p>
+        <p>
+            The p thu 3
+        </p>
+
+        <p>
+            The p thu 4
+        </p>
+
+    </div>
+    <p id="p-hover">
+        The p voi selector theo trang thai hover
+    </p>
+    <a href="abc.com">
+    the a co href la abc.com
+</a>
+    <form action="">
+        <input type="radio" name="gender"> Nam
+        <br> Nhap ten : <input type="text" name="">
+        <br> Nhap password <input type="password" name="password">
+    </form>
+
+    <div id="div-id">
+        <a href="#" title="Title a">
+        The a trong the div dang co id la div-id
+    </a>
+        <div class="div-class">
+            <a href="#">
+            The a trong div dang co class la div-class
+        </a>
+
+        </div>
+    </div>
+    <span class="class1 class2 class3">
+        The span voi cu phap khai bao nhieu class
+    </span>
+    <span id="span-id" class="span-class">
+        The span su dung ca thuoc tinh va class
+
+    </span>
+    <p id="p-id">
+        The p voi id la p-id
+    </p>
+    <p class="p-class">
+        The p voi class la p-class
+    </p>
+
+    <span class="p-class">
+        The span voi class la p-class
+    </span>
+    <p>
+        Noi dung trong the p1
+    </p>
+    <a href="#" target="_brank">
+    Nội dung thẻ a
+</a>
+    <p>
+        Noi dung the p2
+    </p>
+
+    </div>
+</body>
+
+</html>

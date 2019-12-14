@@ -1,0 +1,11 @@
+div {
+	background-color: #eeffff;
+	height: 500px;
+	width: 500px;
+}
+div #h3-warnings {
+	color: red;
+}
+div #ul {
+	color: red;
+}

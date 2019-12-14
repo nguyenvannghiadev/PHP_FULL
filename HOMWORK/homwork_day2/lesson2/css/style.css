@@ -1,0 +1,29 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+body{
+	font-size: 22px;
+}
+#parent {
+    background-color: #008000;
+    height: 600px;
+    width: 60%;
+	padding: 20px;
+}
+
+#container {
+    height: 50%;
+    width: 100%;
+}
+
+#list {
+	height: 50%;
+	width: 100%;
+	background-color: #ff0000;
+}
+div#parent div#list ul{
+	padding-top: 20px;
+	margin-left: 40px;
+}

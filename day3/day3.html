@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo ngay 3_CSS</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+        }
+
+        body {
+            min-height: 2000px;
+        }
+
+        #div-position-parent {
+            background: red;
+            height: 150px;
+            /*position: relative;*/
+        }
+
+        #p-position-child {
+            /*position: absolute;*/
+            background: yellow;
+        }
+
+        h1 {
+            background: blue;
+            /*position: fixed;*/
+        }
+
+        .col1 {
+            background: black;
+            color: white;
+        }
+
+        .col2 {
+            background: yellow;
+        }
+
+        .col3 {
+            background: blue;
+        }
+
+        .col {
+            height: 80px;
+            float: left;
+            width: 33.33%;
+        }
+
+        #div-after-float {
+            background: pink;
+        }
+
+        /*    CSS Display*/
+        h2 {
+            display: inline;
+        / / inline-block, block, flex;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px;
+            background: #666;
+            margin-right: -4px;
+            border-right: 1px solid #000;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        /*    CSS @Media*/
+        /*yeu cau tren cac thiet bi co width < 768px (tuong duong voi mobile thi doi mau nen cho cac the lo cua menu)*/
+        /* Khi lam reposnsive, thuong chia lam ra 3 loai man hinh:*/
+        /* CSS cho Mobile*/
+        @media (max-width: 768px) {
+            li {
+                background: red;
+            }
+        }
+
+        /* CSS cho Table-Ipad*/
+        @media (min-width: 768px) and (max-width: 1024px) {
+
+        }
+
+        /* CSS cho Pc*/
+        @media (min-width: 1024px) {
+
+        }
+
+        /*    CSS z-index*/
+        .index-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .item1 {
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+
+        .item2 {
+            width: 150px;
+            height: 150px;
+            background: yellow;
+        }
+
+        .item3 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+
+        /*    CSS Overflow Opacity*/
+        #div-overflow {
+            background: red;
+            width: 80px;
+            overflow: scroll;
+            opacity: 0.5;
+        }
+
+        /*    CSS transition*/
+        #a-transition {
+            padding: 15px;
+            transition: all 3s ease;
+        }
+        #a-transition:hover {
+            background: red;
+        }
+    </style>
+
+</head>
+
+<body>
+<a href="#" id="a-transition"> The a</a>
+<div id="div-overflow"> dafdfdsfds fdsfdsfdsfds sdf sdfsdf sdfsd fsdfsdfdsfdfdsfdsfds fdsf sdfsdfsdfsdfsd fdsffdsf</div>
+<!--<div id="z-index">-->
+<!--    <div class="index-item item1">-->
+<!--        Item 1-->
+<!--    </div>-->
+<!--    <div class="index-item item2">-->
+<!--        Item 2-->
+<!--    </div>-->
+<!--    <div class="index-item item3">-->
+<!--        Item 3-->
+<!--    </div>-->
+
+<!--</div>-->
+<ul>
+    <li><a href="#" class="menu-link">Link1</a></li>
+    <li><a href="#" class="menu-link">Link2</a></li>
+    <li><a href="#" class="menu-link">Link3</a></li>
+    <li><a href="#" class="menu-link">Link4</a></li>
+</ul>
+
+
+<a href="#" class="a-display">Link1</a>
+<a href="#" class="a-display">Link2</a>
+<p class="p-display"> The p1</p>
+<p class="p-display"> The p2</p>
+
+<span>The Span</span> ANVV
+<h2>The h2</h2> ABCD
+
+<!--CSS FLOAT / lam viec luon phai set width-->
+<!--Doi voi khoi cha dang bao lay cac phan tu bi float ben trong, can them thuoc tinh css display:flex
+ de dam bao cac pha tu ngay sau no khong bi anh huong boi float-->
+<div class="row">
+    <div class="col col1">
+        Cot 1
+    </div>
+    <div class="col col2">
+        Cot 2
+    </div>
+    <div class="col col3">
+        Cot 3
+    </div>
+</div>
+<div id="div-after-float">
+    The div
+</div>
+<!--&lt;!&ndash;Css Position &ndash;&gt;-->
+<!--<h1>Noi dung the h1</h1>-->
+<!--<div id="div-position-parent">-->
+<!--    <p id="p-position-child">-->
+<!--        Noi dung the p-->
+<!--    </p>-->
+<!--</div>-->
+<!--<h1>Noi dung the h1</h1>-->
+
+
+</body>
+
+</html>
