@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.wrapper {
+  border: 2px solid #000;
+  padding: 10px;
+  width: 600px;
+}
+span.span-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+}
+.div-header {
+    text-align: left;
+}
+span.span-form {
+    font-size: 16px;
+    line-height: 30px;
+}
+.item-left {
+    height: 30px;
+    text-align: left;
+}
+table.table {
+    width: 100%;
+}
+td.col-md-5 {
+    width: 50%;
+}
