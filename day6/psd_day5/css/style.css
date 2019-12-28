@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "TitilliumWeb-Regular";
+}
+.header {
+  background: #87509c;
+  padding: 15px 0;
+}
+.container {
+  padding: 0 0 50px 0;
+}
+ul {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+}
+.row-logo {
+  align-items: center;
+}
+li.menu-li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.menu-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+a.active {
+  background: #643a79;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+@font-face {
+  src: url("../fonts/TitilliumWeb-Regular.ttf");
+  font-family: TitilliumWeb-Regular;
+}
+@font-face {
+  src: url("../fonts/TitilliumWeb-Bold.ttf");
+  font-family: TitilliumWeb-Bold;
+}
+@font-face {
+  src: url("../fonts/TitilliumWeb-Italic.ttf");
+  font-family: TitilliumWeb-Italic;
+}
+@font-face {
+  src: url("../fonts/TitilliumWeb-Light.ttf");
+  font-family: TitilliumWeb-Light;
+}
+.service-layout {
+  background: #17c2a4;
+  padding-top: 50px;
+}
+.services-title {
+  text-align: center;
+}
+.services-title::after {
+  content: "";
+  width: 50px;
+  background: #14a58c;
+  height: 2px;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+}
+.meet-layout {
+  background: #e7f1f8;
+  padding-top: 50px;
+}
+.people-layout {
+  background: #d74680;
+  color: white;
+  padding-top: 50px;
+}
+.footer {
+  background: #3c5499;
+  color: white;
+}
+.fa {
+  border: 1px solid #bdd1df;
+  border-radius: 50%;
+  padding: 3px;
+  background: #bdd1df;
+  color: #fff;
+  margin: 5px;
+}
+.social-link {
+  border: 1px solid #bdd1df;
+  border-radius: 50%;
+  padding: 3px;
+  background: #bdd1df;
+  color: #fff;
+  margin: 5px;
+}

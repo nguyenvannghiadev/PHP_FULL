@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Day 5_Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style type="text/css">
+        /* voi mobile max-width se la 767px */
+        /* voi ipad/table min-width: 768px va max-width: 1023px */
+        /* voi pc min-width: 1024px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            /* css ben trong se an voi thiet ke ipad/tablet */
+            .h1-res {
+                color: blue;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            /* cac css ben trong se an voi thiet bi mobile */
+            .h1-res {
+                color: red;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Khai niem Responsive -->
+    <div class="responsive">
+        <h1 class="h1-res">
+            Noi dung the h1, tren mobile doi mau red, con tren ipad thi doi thanh mau xanh, pc thi mac dinh mau den
+        </h1>
+    </div>
+    <!-- File Reset Css -->
+    <!-- Tham khao file Normalize.css -->
+    <!-- Bootstrap -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-6">
+                Khoi thu nhat
+            </div>
+            <div class="col-md-6 col-6">
+                Khoi thu 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-6">Khoi thu 1</div>
+            <div class="col-md-4 col-6">Khoi thu 2</div>
+            <div class="col-md-4">Khoi thu 3</div>
+        </div>
+    </div>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
+    <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+    </div>
+    <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+    </div>
+    <script></script>
+</body>
+
+</html>
