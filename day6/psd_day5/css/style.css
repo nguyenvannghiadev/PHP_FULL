@@ -5,6 +5,7 @@ body {
 .header {
   background: #87509c;
   padding: 15px 0;
+  color: #000;
 }
 .container {
   padding: 0 0 50px 0;
@@ -29,6 +30,11 @@ a.active {
   background: #643a79;
   padding: 3px 8px;
   border-radius: 5px;
+}
+h3.intro-title {
+    color: white;
+    text-align: center;
+    font-family: "TitilliumWeb-Bold"
 }
 @font-face {
   src: url("../fonts/TitilliumWeb-Regular.ttf");
